@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ImageEditor – Browser Image Editing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="assets/logo.png" alt="ImageEditor Logo" />
+    <span>ImageEditor</span>
+  </div>
+
+  <nav>
+    <button class="nav-btn active" data-page="home">Home</button>
+    <button class="nav-btn" data-page="privacy">Privacy Policy</button>
+    <button class="nav-btn" data-page="donate">Donate</button>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HOME -->
+  <img src="assets/editor.png" alt="Resize feature" />
+  <section id="home" class="page active">
+    <h1>ImageEditor – Edit Images Directly in Your Browser</h1>
+
+    <p class="subtitle">
+      ImageEditor is a lightweight, privacy-first Chrome extension that lets you
+      resize, compress, crop, rotate, flip, and download images without uploading
+      them to any server.
+    </p>
+
+    <h2>✨ Features & Use Cases</h2>
+
+    <div class="feature">
+      <img src="assets/resize.png" alt="Resize feature" />
+      <div>
+        <h3>Resize Image</h3>
+        <ul>
+          <li>Adjust width or height manually</li>
+          <li>Optionally lock aspect ratio</li>
+          <li>Instant preview before download</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="feature">
+      <img src="assets/compress.png" alt="Compress feature" />
+      <div>
+        <h3>Compress Image</h3>
+        <ul>
+          <li>Reduce file size efficiently</li>
+          <li>Maintain visual quality</li>
+          <li>Perfect for web uploads and sharing</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="feature">
+      <img src="assets/crop.png" alt="Crop feature" />
+      <div>
+        <h3>Crop Image</h3>
+        <ul>
+          <li>Select a custom crop area</li>
+          <li>Move and resize the crop box</li>
+          <li>Apply crop with live preview</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="feature">
+      <img src="assets/rotate.png" alt="Rotate and flip feature" />
+      <div>
+        <h3>Flip & Rotate</h3>
+        <ul>
+          <li>Rotate images clockwise or anticlockwise</li>
+          <li>Flip horizontally or vertically</li>
+          <li>Combine with other edits seamlessly</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="feature">
+      <img src="assets/download.png" alt="Download feature" />
+      <div>
+        <h3>Download & Compress</h3>
+        <ul>
+          <li>Download images in JPG, PNG, AVIF, or WebP</li>
+          <li>Compress and download in one step</li>
+          <li>No SVG export supported</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>⚙️ How It Works</h2>
+    <p>
+      ImageEditor processes images entirely within your browser using
+      <strong>HTML Canvas</strong> and <strong>Web Workers</strong>.
+      This ensures fast performance while keeping your images private.
+    </p>
+    <ul>
+      <li>Images never leave your device</li>
+      <li>Heavy processing runs off the main UI thread</li>
+      <li>No servers, no cloud processing</li>
+    </ul>
+
+    <h2>💬 Feedback</h2>
+    <p>
+      Have suggestions or found an issue?
+      <a href="https://chrome.google.com/webstore/detail/YOUR_EXTENSION_ID"
+         target="_blank" rel="noopener">
+        Leave feedback on the Chrome Web Store
+      </a>
+    </p>
+  </section>
+
+  <!-- PRIVACY POLICY -->
+  <section id="privacy" class="page">
+    <h1>Privacy Policy</h1>
+
+    <p><strong>Last updated:</strong> January 2026</p>
+
+    <p>
+      ImageEditor is built with a strict privacy-first approach.
+      We do not collect, track, or transmit any user data.
+    </p>
+
+    <h2>Data Collection</h2>
+    <ul>
+      <li>No personal data is collected</li>
+      <li>No analytics, tracking, or cookies</li>
+      <li>No background monitoring</li>
+    </ul>
+
+    <h2>Image Processing</h2>
+    <ul>
+      <li>All image edits are performed locally</li>
+      <li>Images are never uploaded to any server</li>
+      <li>No image data is stored or shared</li>
+    </ul>
+
+    <h2>Permissions</h2>
+    <p>
+      ImageEditor only requests permissions strictly required
+      to enable image editing on webpages.
+    </p>
+
+    <h2>Third-Party Services</h2>
+    <p>
+      ImageEditor does not use advertising, analytics,
+      or third-party tracking services.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      For privacy-related questions, please contact the developer
+      through the Chrome Web Store listing.
+    </p>
+  </section>
+
+  <!-- DONATE -->
+  <section id="donate" class="page">
+    <h1>Support ImageEditor ❤️</h1>
+
+    <p>
+      ImageEditor is independently developed and maintained.
+      If you find it useful, you can support future development.
+    </p>
+
+    <a class="donate-btn"
+       href="https://www.paypal.com/paypalme/supportdevelopment/10usd"
+       target="_blank" rel="noopener">
+      Donate via PayPal
+    </a>
+
+    <p class="note">
+      Donations are optional and do not unlock paid features.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <p>
+    © 2026 ImageEditor ·
+    <a href="https://chrome.google.com/webstore/detail/YOUR_EXTENSION_ID"
+       target="_blank" rel="noopener">
+      Chrome Web Store
+    </a>
+    · Version 1.0.0
+  </p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
